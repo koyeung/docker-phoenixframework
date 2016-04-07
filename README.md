@@ -1,5 +1,5 @@
-docker-phoenix
-==============
+docker-phoenixframework
+=======================
 
 Run [Phoenix Framework](http://www.phoenixframework.org) on [Alpine Linux](http://www.alpinelinux.org) docker image.
 

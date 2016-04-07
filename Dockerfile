@@ -1,6 +1,10 @@
 FROM koyeung/elixir:1.2.4
 MAINTAINER King-On Yeung <koyeung@gmail.com>
 
+#
+# setup node.js
+#
+
 ENV NPM_CONFIG_LOGLEVEL info
 ENV NODE_VERSION 5.10.1
 
@@ -37,7 +41,10 @@ RUN set -ex \
   && apk del .setup-deps \
   && rm -rf /usr/local/node-v$NODE_VERSION
 
-CMD [ "node" ]
+
+#
+# setup Phoenix
+#
 
 ENV PHOENIX_VERSION 1.1.4
 
